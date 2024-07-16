@@ -12,7 +12,7 @@ TEST(SoudexTestsuite, ReplacesConsonantsWithAppropriateDigits_1) {
 //AAA
 char soundex[5];
 generateSoundex("pvt", soundex);
-ASSERT_STREQ(soundex," P130");
+ASSERT_STREQ(soundex,"P130");
 }
  
 TEST(SoudexTestsuite, ReplacesConsonantsWithAppropriateDigits_2) {
