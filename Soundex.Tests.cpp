@@ -11,8 +11,8 @@ ASSERT_STREQ(soundex,"$666");
 TEST(SoudexTestsuite, ReplacesConsonantsWithAppropriateDigits_1) {
 //AAA
 char soundex[5];
-generateSoundex(" ", soundex);
-ASSERT_STREQ(soundex," 000");
+generateSoundex("fly", soundex);
+ASSERT_STREQ(soundex," F400");
 }
  
 TEST(SoudexTestsuite, ReplacesConsonantsWithAppropriateDigits_2) {
@@ -28,12 +28,12 @@ char soundex[5];
 generateSoundex("aeiou", soundex);
 ASSERT_STREQ(soundex,"A000");
 }
- 
+
 TEST(SoudexTestsuite, ReplacesConsonantsWithAppropriateDigits_space) {
 //AAA
 char soundex[5];
-generateSoundex("fly", soundex);
-ASSERT_STREQ(soundex," f400");
+generateSoundex(" ", soundex);
+ASSERT_STREQ(soundex," 000");
 }
  
 TEST(SoudexTestsuite, ReplacesConsonantsWithAppropriateDigits_3) {
