@@ -11,8 +11,8 @@ ASSERT_STREQ(soundex,"$666");
 TEST(SoudexTestsuite, ReplacesConsonantsWithAppropriateDigits_1) {
 //AAA
 char soundex[5];
-generateSoundex("fly", soundex);
-ASSERT_STREQ(soundex," F400");
+generateSoundex("pvt", soundex);
+ASSERT_STREQ(soundex," P130");
 }
  
 TEST(SoudexTestsuite, ReplacesConsonantsWithAppropriateDigits_2) {
