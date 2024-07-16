@@ -32,8 +32,8 @@ ASSERT_STREQ(soundex,"A000");
 TEST(SoudexTestsuite, ReplacesConsonantsWithAppropriateDigits_space) {
 //AAA
 char soundex[5];
-generateSoundex(" ", soundex);
-ASSERT_STREQ(soundex," 000");
+generateSoundex("fly", soundex);
+ASSERT_STREQ(soundex," f400");
 }
  
 TEST(SoudexTestsuite, ReplacesConsonantsWithAppropriateDigits_3) {
